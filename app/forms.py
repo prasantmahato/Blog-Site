@@ -1,3 +1,4 @@
+from flask.app import Flask
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
 from wtforms import validators, TextAreaField
@@ -48,5 +49,8 @@ class EditProfileForm(FlaskForm):
                 raise ValidationError('Please use a different username.')
 
 
+# Empty form for following and unfollowing
+class EmptyForm(FlaskForm):
+    submit = SubmitField('Submit')
 
 

@@ -12,7 +12,7 @@
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
-        <p>{{ form.submit() }}</p>
+        <p>{{ form.submit(class_="button btn-login") }}</p>
     </form>
     {% endif %}
     {% for post in posts %}

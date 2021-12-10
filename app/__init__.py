@@ -7,7 +7,6 @@ from flask_mail import Mail
 import os, logging
 from logging.handlers import SMTPHandler, RotatingFileHandler
 
-
 app = Flask(__name__)
 app.config.from_object(Config)
 db = SQLAlchemy(app)

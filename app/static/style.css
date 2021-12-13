@@ -2,6 +2,11 @@
     width: 500px;
     margin: auto;
 } */
+.navbar{
+    padding: 10px;
+    /* margin-left: 10px; */
+}
+/*  */
 .nav{
     list-style-type: none;
     margin: 0;
@@ -32,11 +37,11 @@ li a:hover:not(.active){
 }
 
 .flash-msg{
-    background-color: #f89406;
+    /* background-color: #f89406;
     border-color: #e96506;
     color: #ffffff;
     padding: 20px;
-    height: 20px;;
+    height: 20px;; */
     /* width: auto; */
     margin: 20px;
     list-style: none;
@@ -102,6 +107,12 @@ textarea {
 
 .img-profile{
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.img-post{
+    border: 1px solid black;
+    border-radius: 50%;
     position: relative;
 }

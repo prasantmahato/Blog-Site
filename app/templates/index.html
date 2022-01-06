@@ -7,12 +7,12 @@
         {{ form.hidden_tag() }}
         <p>
             {{ form.post.label }}<br>
-            {{ form.post(cols=32, rows=4) }}<br>
+            {{ form.post(cols=40, rows=4) }}<br>
             {% for error in form.post.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
-        <p>{{ form.submit(class_="btn btn-outline-dark") }}</p>
+        <p>{{ form.submit(class_="btn btn-dark") }}</p>
     </form>
     {% endif %}
     {% for post in posts %}

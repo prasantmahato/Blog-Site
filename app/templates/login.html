@@ -1,31 +1,39 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Sign In</h1>
+<h1 class="container-fluid">Sign In</h1>
+
+<div class="login">
+    
     <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
         <p>
+            
             {{ form.username.label() }} <br>
             {{ form.username(size=32) }}
             {% for error in form.username.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+            <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
+            (pk)
         </p>
         <p>
-            {{ form.password.label }} <br>
-            {{ form.password(size=32)  }}
+            {{ form.password.label() }} <br>
+            {{ form.password(size=32, value="testpk")  }}
             {% for error in form.password.errors %}
-                <span style="color: red;">[{{ error }}]</span>
+            <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
+            (pktest)
         </p>
         <p>
             {{ form.remember_me() }}
             {{ form.remember_me.label }}
         </p>
-        <p> {{ form.submit(class_="button btn-login") }}  </p>
+        <p> {{ form.submit(class_="btn btn-dark") }}  </p>
         <p>
             <a href="{{ url_for('reset_password_request') }} ">Forgot Your Password?</a>
         </p>
         <p>New User? <a href="{{ url_for('register') }}">Click to Register</a></p>
     </form>
+
+</div>
 {% endblock %}

@@ -1,0 +1,13 @@
+
+.login, .register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+.login_text{
+    display: flex;
+    justify-content: left;
+    /* border: 2px solid red; */
+}

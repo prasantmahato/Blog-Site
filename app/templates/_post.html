@@ -5,12 +5,15 @@
                 <img class="img-post" src="{{ post.author.avatar(70) }} " alt="user avatar">
             </a>
         </td>
-        <td>
-            <a href="{{ url_for('user', username=post.author.username) }}  ">
+        <td class="blog_post container-fluid">
+            <a href="{{ url_for('user', username=post.author.username) }} ">
                 {{ post.author.username }} 
             </a>
             says: <br> 
-            {{ post.body }}
+            <p class="post_text">
+                {{ post.body }}
+            </p>
+                
         </td>
     </tr>
 </table>

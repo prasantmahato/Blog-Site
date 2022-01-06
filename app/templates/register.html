@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
+<h1 class="container-fluid">Register</h1>
+<div class="container-fluid register">
 
-    <h1>Register</h1>
     <form action="" method="POST">
         {{ form.hidden_tag() }}
         <p>
@@ -34,8 +35,10 @@
             {% endfor %}
         </p>
 
-        <p> {{ form.submit() }}  </p>
+        <p> {{ form.submit(class_="btn btn-dark") }}  </p>
         
     </form>
+
+</div>
 
 {% endblock %}

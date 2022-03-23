@@ -1,4 +1,12 @@
+/migrations
+
 venv
+/venv
+
+/logs
+*.log
+
 *.pyc
 app.db
+*.db
 .DS_Store
